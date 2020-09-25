@@ -65,13 +65,13 @@ brew cask install docker
 brew cask install tunnelblick
 
 # Browsers
-brew cask install google-chrome
+#brew cask install google-chrome
 brew cask install firefox
 
 # Communication
-brew cask install rocket
-brew cask install slack
-brew cask install skype
+#brew cask install rocket
+#brew cask install slack
+#brew cask install skype
 
 # Change the user's life forever
 # God bless the best text editor on earth

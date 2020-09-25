@@ -11,19 +11,17 @@ brew update
 brew cask upgrade
 
 # Time for some action
-brew cask install slack
 brew cask install firefox
-brew cask install firefox-nightly
 brew cask install google-chrome
 brew cask install spotify
-brew cask install iterm2
 brew cask install flux
 brew cask install docker
-brew cask install dropbox
 brew cask install skype
 brew cask install tunnelblick
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
 brew cask install vlc
-brew cask install evernote
-brew cask install rocket
+brew cask install balenaetcher
+brew cask install cmake
+brew cask install zoomus
+brew cask install discord
+brew cask install zotero
+
