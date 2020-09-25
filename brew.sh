@@ -22,7 +22,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -38,7 +38,7 @@ brew install python3
 pip3 install --user --upgrade neovim
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 brew install curl
 
@@ -47,9 +47,11 @@ brew install neovim
 brew install grep
 brew install openssh
 
+brew install fortune
+
 # Install other useful binaries.
 brew install git
-brew install yarn --without-node
+brew install yarn
 brew install tmux
 
 
@@ -75,8 +77,11 @@ brew cask install firefox
 
 # Change the user's life forever
 # God bless the best text editor on earth
-brew install vim --with-override-system-vi
-brew install neovim --with-override-system-vi
+brew install vim
+brew install neovim
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim +PlugClean! +qall
 nvim +silent +PlugInstall +qall
 python3 ~/.config/nvim/plugged/YouCompleteMe/install.py
